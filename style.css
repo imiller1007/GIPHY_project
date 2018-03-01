@@ -1,0 +1,43 @@
+@font-face {
+    font-family: sunny;
+    src: url(assets/fonts/LucidaCasualItalic.ttf);
+}
+
+body{
+    background-color: seagreen;
+    
+}
+
+#container{
+    font-family: sunny;
+    color: gold;
+    text-shadow: 2px 2px #000000;
+}
+
+#heading{
+    text-align: center;
+}
+
+#gifsHere{
+    text-align: center;
+}
+
+h1{
+    position: relative;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+}
+
+#myButtons{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
