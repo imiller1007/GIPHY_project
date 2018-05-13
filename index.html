@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div id=container>
+<div class="container">
 
     <div id=heading>
         <img src="assets/images/alwaysSunny.png">
@@ -23,23 +23,23 @@
 
 
     <div id="myButtons">
-        <button data-person="always sunny mac">The Badass</button>
-        <button data-person="always sunny dennis">The Implication</button>
-        <button data-person="always sunny charlie">The Wildcard</button>
-        <button data-person="always sunny frank">The Mantis</button>
-        <button data-person="always sunny dee">The Bird</button>
+        <button data-person="always sunny dennis">Dennis</button>
+        <button data-person="always sunny mac">Mac</button>
+        <button data-person="always sunny charlie">Charlie</button>
+        <button data-person="always sunny frank">Frank</button>
+        <button data-person="always sunny dee">Sweet Dee</button>
     </div>
         
     
 
     <div id="yourButtons">
-        
+
     </div>
 <br>
     
     <form>
         <div class="form-group">
-        <input type="email" class="form-control" placeholder="Create your own buttons for your other favorite characters!"><button type="submit" id="userSub" class="btn btn-success">Generate</button>
+        <input type="text" class="form-control" placeholder="Create your own buttons for your other favorite characters!" aria-label="Username" aria-describedby="basic-addon1"><button type="submit" id="userSub" class="btn btn-success">Generate</button>
         </div>
     </form>
 

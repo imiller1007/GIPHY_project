@@ -8,7 +8,7 @@ function populateButts() {
     
     $("#yourButtons").empty();
     for(var i = 0; i<charList.length; i++){
-        $("#yourButtons").append("<button id='char' gifsearch='" + charList[i] + "' type='submit'>"+
+        $("#yourButtons").append("<button id='char' class='createdButton' gifsearch='" + charList[i] + "' type='submit'>"+
         charList[i] + "</button>");
     
     }
@@ -19,7 +19,7 @@ function displayGifs() {
     var gifQuery = $(this).attr("gifsearch");
     console.log(gifQuery);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    gifQuery + "&api_key=dc6zaTOxFJmzC&limit=10";
+    gifQuery + "&api_key=dc6zaTOxFJmzC&limit=15";
 
     
     $.ajax({
@@ -33,14 +33,14 @@ function displayGifs() {
         for (var i = 0; i < results.length; i++) {
         var gifDiv = $("<div class='item'>");
   
-        var rating = results[i].rating;
+        // var rating = results[i].rating;
   
-        var p = $("<p>").text("Rating: " + rating);
+        // var p = $("<p>").text("Rating: " + rating);
   
-        var personImage = $("<img>");
+        var personImage = $("<img class='rounded float-left'>");
         personImage.attr("src", results[i].images.fixed_height.url);
   
-        gifDiv.prepend(p);
+        // gifDiv.prepend(p);
         gifDiv.prepend(personImage);
   
         $("#gifsHere").prepend(gifDiv);
@@ -70,7 +70,7 @@ $("button").on("click", function() {
 
     var person = $(this).attr("data-person");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      person + "&api_key=dc6zaTOxFJmzC&limit=10";
+      person + "&api_key=dc6zaTOxFJmzC&limit=15";
 
     $.ajax({
         url: queryURL,
@@ -83,14 +83,14 @@ $("button").on("click", function() {
         for (var i = 0; i < results.length; i++) {
           var gifDiv = $("<div class='item'>");
 
-          var rating = results[i].rating;
+        //   var rating = results[i].rating;
 
-          var p = $("<p>").text("Rating: " + rating);
+        //   var p = $("<p>").text("Rating: " + rating);
 
-          var personImage = $("<img>");
+          var personImage = $("<img class='rounded float-left' >");
           personImage.attr("src", results[i].images.fixed_height.url);
 
-          gifDiv.prepend(p);
+        //   gifDiv.prepend(p);
           gifDiv.prepend(personImage);
 
           $("#gifsHere").prepend(gifDiv);
